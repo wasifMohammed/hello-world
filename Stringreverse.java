@@ -22,10 +22,14 @@ public class Stringreverse {
         Scanner read=new Scanner(System.in);
         System.out.println("Enter a string to print it's reverse..");
         str=read.nextLine();
+        if(str.length<100000){
         StringBuilder str1=new StringBuilder();
         str1.append(str);
         str1=str1.reverse();
         System.out.println(str1);
+        }else{
+        System.out.println("Too long..");
+        }
       
     }
     
